@@ -10,8 +10,8 @@ let package = Package(
         .library(
             name: "MyLittleLibrary",
             targets: ["MyLittleLibrary"]),
-        .library(name: "MyThen",
-            targets: ["MyThen"])
+        .library(name: "BoxThen",
+            targets: ["BoxThen"])
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -21,9 +21,9 @@ let package = Package(
         .testTarget(
             name: "MyLittleLibraryTests",
             dependencies: ["MyLittleLibrary"]),
-        .target(name: "MyThen",
+        .target(name: "BoxThen",
                 dependencies:[],
-                path: "MyThen",
+                path: "BoxThen",
                 resources: [
                     .process("Logo.gif"),
                     .copy("Data")

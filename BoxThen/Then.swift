@@ -7,10 +7,10 @@
 
 import UIKit
 
-protocol Then {}
+public protocol Then {}
 
-extension Then where Self: AnyObject {
-    
+public extension Then where Self: AnyObject {
+
     func then(block: (Self) -> Void) -> Self {
         block(self)
         return self
