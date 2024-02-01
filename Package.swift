@@ -10,6 +10,8 @@ let package = Package(
         .library(
             name: "MyLittleLibrary",
             targets: ["MyLittleLibrary"]),
+        .library(name: "MyThen",
+            targets: ["MyThen"])
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
